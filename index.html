@@ -105,35 +105,74 @@
             placeholder="Enter Destination of Shipment">
         </div>
       </div>
-      MAP
-
       <div class="row">
         <div class="col-6">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="modeDropdown" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Mode</button>
-            <div class="dropdown-menu" aria-labelledby="modeDropdown">
-              <a class="dropdown-item" href="#">Prime 1-day</a>
-              <a class="dropdown-item" href="#">Prime</a>
-              <a class="dropdown-item" href="#">Priority</a>
-              <a class="dropdown-item" href="#">Expedited</a>
-              <a class="dropdown-item" href="#">FEDEX Next-Day</a>
-            </div>
+          <h6>Shipping Method</h5>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="shippingMode" id="prime1" value="Prime 1-day " checked>
+              <label class="form-check-label" for="prime1">
+                Prime 1-Day
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="shippingMode" id="prime2" value="Prime">
+              <label class="form-check-label" for="prime2">
+                Prime
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="shippingMode" id="priority" value="Priority">
+              <label class="form-check-label" for="priority">
+                Priority
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="shippingMode" id="expedited" value="Expedited">
+              <label class="form-check-label" for="expedited">
+                Expedited
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="shippingMode" id="fedex" value="FEDEX Next-Day">
+              <label class="form-check-label" for="fedex">
+                FedEx Next-Day
+              </label>
           </div>
         </div>
         <div class="col-6">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="transportationropdown" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Mode</button>
-              <div class="dropdown-menu" aria-labelledby="transportationDropdown">
-                <a class="dropdown-item" href="#">Boat</a>
-                <a class="dropdown-item" href="#">Ground</a>
-                <a class="dropdown-item" href="#">Air</a>
-                <a class="dropdown-item" href="#">Rail</a>
-                <a class="dropdown-item" href="#">Drone</a>
-              </div>
+            <h6>Transportation</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="transportation" id="boat" value="boat" checked>
+                <label class="form-check-label" for="boat">
+                  Boat
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="transportation" id="ground" value="ground">
+                <label class="form-check-label" for="ground">
+                  Ground
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="transportation" id="air" value="air">
+                <label class="form-check-label" for="air">
+                  Air
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="transportation" id="train" value="train">
+                <label class="form-check-label" for="train">
+                  Train
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="transportation" id="drone" value="drone">
+                <label class="form-check-label" for="drone">
+                  Drone
+                </label>
             </div>
           </div>
+
       </div>
       <div class="row d-flex justify-content-center">
         <div class="col-5 form-group">
