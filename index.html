@@ -81,7 +81,6 @@
       margin-bottom: 2px;
     }
   </style>
-  <script src="https://ajax.googleapis.com/ajaix/libs/jquery/3.2.0/jquery.min.js"></script>
   <title>Eco-Friend</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -99,15 +98,20 @@
       <div class="row">
         <div class="col-6 form-group">
           <label class="d-flex justify-content-center" for="origin">Origin</label>
-          <input type="text" class="form-control" id="origin" aria-describedby="origin" onfocus="initAutocomplete()"
+          <input type="text" class="form-control" id="origin" aria-describedby="origin" onfocus="initAutocompleteOrigin()"
             placeholder="Enter Origin of Shipment">
         </div>
         <div class="col-6 form-group">
           <label class="d-flex justify-content-center" for="destination">Destination</label>
-          <input type="text" class="form-control" id="destination" aria-describedby="destination"
+          <input type="text" class="form-control" id="destination"  onfocus="initAutocompleteDestination()" aria-describedby="destination"
             placeholder="Enter Destination of Shipment">
         </div>
       </div>
+
+
+        <div class="slimField" id="distance">aaaaaaaaa</div>
+
+        <div class="row">
       <div class="row">
         <div class="col-6">
           <h6>Shipping Method</h5>
