@@ -76,11 +76,13 @@ var placeSearch, autocomplete;
     postal_code: 'short_name'
   };
 
+function initMap() {} // now it IS a function and it is in global
+
   function initAutocomplete() {
     // Create the autocomplete object, restricting the search predictions to
     // geographical location types.
     autocomplete = new google.maps.places.Autocomplete(
-        document.getElementById('autocomplete'), {types: ['geocode']});
+        document.getElementById('origin'), {types: ['geocode']});
 
     // Avoid paying for data that you don't need by restricting the set of
     // place fields that are returned to just the address components.
