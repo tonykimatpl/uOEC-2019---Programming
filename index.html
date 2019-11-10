@@ -2,17 +2,39 @@
 <html lang="en">
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <title>Eco-Friend</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajaix/libs/jquery/3.2.0/jquery.min.js"></script>
+  <title>Eco-Friend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>
-  <h1>Eco-Friend</h1>
 
+
+  <h1 class="d-flex justify-content-center">Eco-Friend</h1>
+
+  <div class="container-fluid">
+    <form>
+      <div class="row">
+        <div class="col-6 form-group">
+          <label class="d-flex justify-content-center" for="origin">Origin</label>
+          <input type="text" class="form-control" id="origin" aria-describedby="origin"
+            placeholder="Enter Origin of Shipment">
+        </div>
+        <div class="col-6 form-group">
+          <label class="d-flex justify-content-center" for="destination">Destination</label>
+          <input type="text" class="form-control" id="destination" aria-describedby="destination"
+            placeholder="Enter Destination of Shipment">
+        </div>
+      </div>
+      MAP
+    </form>
+  </div>
+
+
+  <!-- 
 <div id="area1">
 
   <div id="cityDiv">
@@ -23,7 +45,7 @@
       </div>
     </div>
     <div id="map"></div>
-    <!--Google Maps API Key for Maps Place Autocomplete-->
+    Google Maps API Key for Maps Place Autocomplete
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1W0gHh7ubG9bAMAuEsDgtiZWkM9fcP1Y&libraries=places&callback=initMap"
           async defer></script>
 
@@ -48,7 +70,8 @@
     <option value="december">December</option>
   </select>
 
-</div>
+</div> -->
 
 </body>
+
 </html>
