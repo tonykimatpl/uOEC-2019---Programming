@@ -1,0 +1,23 @@
+{
+  "name": "uoec-2019---programming",
+  "version": "1.0.0",
+  "description": "UOEC Programming Group",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykimatpl/uOEC-2019---Programming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykimatpl/uOEC-2019---Programming/issues"
+  },
+  "homepage": "https://github.com/tonykimatpl/uOEC-2019---Programming#readme",
+  "devDependencies": {
+    "electron": "^7.1.1"
+  }
+}
