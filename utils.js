@@ -118,13 +118,13 @@ function initMap() {} // now it IS a function and it is in global
   function geolocate() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        var geolocation = {
+        let geolocation = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-        var circle = new google.maps.Circle(
+        let circle = new google.maps.Circle(
             {center: geolocation, radius: position.coords.accuracy});
-        autocomplete.setBounds(circle.getBounds());
+          autocomplete.setBounds(circle.getBounds());
       });
     }
   }
