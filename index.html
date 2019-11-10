@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Eco-Friend</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+  <h1>Eco-Friend</h1>
+
+<div id="area1"> <!--Might be useful later, encapsulates whole area-->
+
+<!--Will need to add name value to each input type for the action.php-->
+<form id="main_form" action="/action_page.php">
+<div id="nameDiv">
+  <h2>What's your name?</h2>
+  <input class="nameInput" type="text" value="" placeholder="Name" />
+  <button type="button" class="btn btn-primary" onclick="bClick('nameDiv','cityDiv');">Next</button>
+</div>
+
+<div id="monthDiv">
+  <h2>Which month will you be travelling?</h2>
+  <select name="Month">
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="march">March</option>
+    <option value="april">April</option>
+    <option value="may">May</option>
+    <option value="june">June</option>
+    <option value="july">July</option>
+    <option value="august">August</option>
+    <option value="september">September</option>
+    <option value="october">October</option>
+    <option value="november">November</option>
+    <option value="december">December</option>
+  </select>
+
+
+  <button type="button" class="btn btn-primary" onclick="bClick('monthDiv','dayDiv');">Previous</button>
+  <button type="button" class="btn btn-primary" onclick="bClick('monthDiv','categoryDiv');">Next</button>
+</div>
 
 </body>
 </html>
