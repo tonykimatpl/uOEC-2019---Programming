@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <title>Eco-Friend</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
   <h1>Eco-Friend</h1>
 
-<div id="area1"> <!--Might be useful later, encapsulates whole area-->
+<div id="area1">
 
-<!--Will need to add name value to each input type for the action.php-->
-<form id="main_form" action="/action_page.php">
-<div id="nameDiv">
-  <h2>What's your name?</h2>
-  <input class="nameInput" type="text" value="" placeholder="Name" />
-  <button type="button" class="btn btn-primary" onclick="bClick('nameDiv','cityDiv');">Next</button>
-</div>
+  <div id="cityDiv">
+    <div class="pac-card" id="pac-card">
+      <div><h2>Which city will you be visiting?</h2></div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a city" />
+      </div>
+    </div>
+    <div id="map"></div>
+    <!--Google Maps API Key for Maps Place Autocomplete-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1W0gHh7ubG9bAMAuEsDgtiZWkM9fcP1Y&libraries=places&callback=initMap"
+          async defer></script>
+
+    <button type="button" class="btn btn-primary" onclick="bClick('cityDiv','nameDiv');">Previous</button>
+    <button type="button" class="btn btn-primary" onclick="bClick('cityDiv','dayDiv');">Next</button>
+  </div>
 
 <div id="monthDiv">
-  <h2>Which month will you be travelling?</h2>
+  <h2>Where will this shipment originate from?</h2>
   <select name="Month">
     <option value="january">January</option>
     <option value="february">February</option>
@@ -37,9 +48,6 @@
     <option value="december">December</option>
   </select>
 
-
-  <button type="button" class="btn btn-primary" onclick="bClick('monthDiv','dayDiv');">Previous</button>
-  <button type="button" class="btn btn-primary" onclick="bClick('monthDiv','categoryDiv');">Next</button>
 </div>
 
 </body>
