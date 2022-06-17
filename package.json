@@ -19,6 +19,6 @@
   "homepage": "https://github.com/tonykimatpl/uOEC-2019---Programming#readme",
   "devDependencies": {
     "@types/googlemaps": "^3.38.0",
-    "electron": "^7.1.1"
+    "electron": "^15.5.5"
   }
 }
